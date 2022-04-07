@@ -34,11 +34,11 @@ func main() {
 	for {
 		fmt.Scanln(&ipk, &masaStudi, &publikasi)
 
-		if ipk == 0 && masaStudi == 0 && publikasi == false {
+		if ipk < 2 || ipk > 4 || masaStudi < 6 || masaStudi > 14 {
+			continue
+		} else if ipk == 0 && masaStudi == 0 && publikasi == false {
 			break
-		}
-
-		if ipk >= 3.51 && masaStudi <= 8 && publikasi == true {
+		} else if ipk >= 3.51 && masaStudi <= 8 && publikasi == true {
 			lulusanCumlaude++
 		}
 

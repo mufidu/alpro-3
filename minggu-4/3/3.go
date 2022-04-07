@@ -35,9 +35,9 @@ func main() {
 	fmt.Print("Jumlah calon wisudawan: ")
 	fmt.Scanln(&jumlahCalon)
 
-	for i := 0; i < jumlahCalon; i++ {
-		for j := 0; j < 3; j++ {
-			fmt.Print("Calon ", i+1, " EPrT ", j+1, ": ")
+	for i := 1; i <= jumlahCalon; i++ {
+		for j := 1; j <= 3; j++ {
+			fmt.Print("Calon ", i, " EPrT ", j, ": ")
 			fmt.Scanln(&EPrT)
 			if EPrT >= 500 {
 				break
